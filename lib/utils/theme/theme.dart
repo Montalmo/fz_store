@@ -8,23 +8,23 @@ import 'package:fz_store/utils/theme/custom_themes/outlined_button.dart';
 import 'package:fz_store/utils/theme/custom_themes/text_field_theme.dart';
 import 'package:fz_store/utils/theme/custom_themes/text_theme.dart';
 
-class AZAppTheme {
-  const AZAppTheme._();
+class FZAppTheme {
+  const FZAppTheme._();
 
   static final ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Gillroy',
     primaryColor: Colors.blue,
     brightness: Brightness.light,
-    chipTheme: AZChipTheme.lightChipTheme,
-    textTheme: AZTextTheme.lightTextTheme,
+    chipTheme: FZChipTheme.lightChipTheme,
+    textTheme: FZTextTheme.lightTextTheme,
     scaffoldBackgroundColor: Colors.white,
-    appBarTheme: AZAppBarTheme.lightAppBarTheme,
-    checkboxTheme: AZCheckBoxTheme.lightCheckBoxTheme,
-    outlinedButtonTheme: AZOutlinedButton.lightOutlinedButton,
-    bottomSheetTheme: AZBottomSheetTheme.lightBottomSheetTheme,
-    elevatedButtonTheme: AZElevatedButtonThene.lightElevatedButtonTheme,
-    inputDecorationTheme: AZTextFormFieldTheme.lightInputDecorationTheme,
+    appBarTheme: FZAppBarTheme.lightAppBarTheme,
+    checkboxTheme: FZCheckBoxTheme.lightCheckBoxTheme,
+    outlinedButtonTheme: FZOutlinedButton.lightOutlinedButton,
+    bottomSheetTheme: FZBottomSheetTheme.lightBottomSheetTheme,
+    elevatedButtonTheme: FZElevatedButtonThene.lightElevatedButtonTheme,
+    inputDecorationTheme: FZTextFormFieldTheme.lightInputDecorationTheme,
   );
 
   static final ThemeData darkTheme = ThemeData(
@@ -32,14 +32,14 @@ class AZAppTheme {
     fontFamily: 'Gillroy',
     primaryColor: Colors.blue,
     brightness: Brightness.dark,
-    chipTheme: AZChipTheme.darkChipTheme,
-    textTheme: AZTextTheme.darkTextTheme,
+    chipTheme: FZChipTheme.darkChipTheme,
+    textTheme: FZTextTheme.darkTextTheme,
     scaffoldBackgroundColor: Colors.black,
-    appBarTheme: AZAppBarTheme.darkAppBarTheme,
-    checkboxTheme: AZCheckBoxTheme.darkCheckBoxTheme,
-    outlinedButtonTheme: AZOutlinedButton.darkOutlinedButton,
-    bottomSheetTheme: AZBottomSheetTheme.darkBottomSheetTheme,
-    elevatedButtonTheme: AZElevatedButtonThene.darkElevatedButtonTheme,
-    inputDecorationTheme: AZTextFormFieldTheme.darkInputDecorationTheme,
+    appBarTheme: FZAppBarTheme.darkAppBarTheme,
+    checkboxTheme: FZCheckBoxTheme.darkCheckBoxTheme,
+    outlinedButtonTheme: FZOutlinedButton.darkOutlinedButton,
+    bottomSheetTheme: FZBottomSheetTheme.darkBottomSheetTheme,
+    elevatedButtonTheme: FZElevatedButtonThene.darkElevatedButtonTheme,
+    inputDecorationTheme: FZTextFormFieldTheme.darkInputDecorationTheme,
   );
 }

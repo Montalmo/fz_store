@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AZChipTheme {
-  const AZChipTheme._();
+class FZChipTheme {
+  const FZChipTheme._();
 
   //* Light Theme
   static final ChipThemeData lightChipTheme = ChipThemeData(

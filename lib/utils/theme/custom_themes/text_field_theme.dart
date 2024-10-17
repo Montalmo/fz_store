@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AZTextFormFieldTheme {
-  const AZTextFormFieldTheme._();
+class FZTextFormFieldTheme {
+  const FZTextFormFieldTheme._();
 
 //* Light Theme
   static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(

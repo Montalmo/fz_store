@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AZCheckBoxTheme {
-  const AZCheckBoxTheme._();
+class FZCheckBoxTheme {
+  const FZCheckBoxTheme._();
 
   //* Light Theme
   static final CheckboxThemeData lightCheckBoxTheme = CheckboxThemeData(

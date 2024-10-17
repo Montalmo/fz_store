@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AZTextTheme {
-  AZTextTheme._();
+class FZTextTheme {
+  FZTextTheme._();
 
   /// Custom Light Text Theme
   static final TextTheme lightTextTheme = TextTheme(

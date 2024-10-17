@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AZAppBarTheme {
-  const AZAppBarTheme._();
+class FZAppBarTheme {
+  const FZAppBarTheme._();
 
   //*Light theme
   static const lightAppBarTheme = AppBarTheme(

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
-class AZBottomSheetTheme {
-  const AZBottomSheetTheme._();
+class FZBottomSheetTheme {
+  const FZBottomSheetTheme._();
 
   //*Light theme
-  static final BottomSheetThemeData lightBottomSheetTheme = BottomSheetThemeData(
+  static final BottomSheetThemeData lightBottomSheetTheme =
+      BottomSheetThemeData(
     showDragHandle: true,
     backgroundColor: Colors.white,
     modalBackgroundColor: Colors.white,
