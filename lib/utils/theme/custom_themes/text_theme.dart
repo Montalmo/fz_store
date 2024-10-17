@@ -4,7 +4,7 @@ class AZTextTheme {
   AZTextTheme._();
 
   /// Custom Light Text Theme
-  static TextTheme lightTextTheme = TextTheme(
+  static final TextTheme lightTextTheme = TextTheme(
     //* Headline
     headlineLarge: const TextStyle().copyWith(
         fontSize: 32.0, fontWeight: FontWeight.w800, color: Colors.black),
@@ -41,7 +41,7 @@ class AZTextTheme {
   );
 
   /// Custom Dark Text Theme
-  static TextTheme darkTextTheme = TextTheme(
+  static final TextTheme darkTextTheme = TextTheme(
     //* Headline
     headlineLarge: const TextStyle().copyWith(
         fontSize: 32.0, fontWeight: FontWeight.w800, color: Colors.white),
