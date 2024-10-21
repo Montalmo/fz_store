@@ -47,6 +47,7 @@ class FZSizes {
   //* Input Field
   static const double inputFieldRadius = 14.0;
   static const double spaceBtwInputFields = 16.0;
+  static const double spaceBtwInputFieldsS = 12.0;
 
   //* Card Sizes
   static const double cardElivation = 2.0;
