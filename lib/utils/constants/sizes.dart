@@ -2,11 +2,12 @@ class FZSizes {
   const FZSizes._();
 
   //* Paddings and Margin Sizes
-  static const double xs4 = 4.0;
-  static const double sm8 = 8.0;
-  static const double md16 = 16.0;
-  static const double lg24 = 24.0;
-  static const double xl32 = 24.0;
+  static const double s4 = 4.0;
+  static const double s8 = 8.0;
+  static const double s12 = 12.0;
+  static const double s16 = 16.0;
+  static const double s24 = 24.0;
+  static const double s32 = 24.0;
 
   //* Icons Sizes
   static const double iconXs12 = 12.0;

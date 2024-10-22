@@ -1,11 +1,13 @@
 class FZImages {
   // *App Logos
-  static const String darkAppLogo = '';
-  static const String lightAppLogo = '';
+  static const String darkAppLogo = 'assets/images/fz_store_logo_onwhite.png';
+  static const String lightAppLogo = 'assets/images/fz_store_logo_onblack.png';
 
   // *Social Logos
-  static const String google = '';
-  static const String facebook = '';
+  static const String lightGoogle = 'assets/icons/google_icon.svg';
+  static const String lightFacebook = 'assets/icons/facebook_icon.svg';
+  static const String darkApple = 'assets/icons/dark_apple_icon.svg';
+  static const String lightApple = 'assets/icons/apple_icon.svg';
 
   // *App Onborading images
   static const String onBpoardingImage1 =

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fz_store/utils/constants/colors.dart';
 
 class FZCheckBoxTheme {
   const FZCheckBoxTheme._();
@@ -8,14 +9,14 @@ class FZCheckBoxTheme {
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
     checkColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
-        return Colors.white;
+        return FZColors.white;
       } else {
         return Colors.black;
       }
     }),
     fillColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
-        return Colors.blue;
+        return FZColors.primary;
       } else {
         return Colors.transparent;
       }
@@ -27,14 +28,14 @@ class FZCheckBoxTheme {
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
     checkColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
-        return Colors.white;
+        return FZColors.white;
       } else {
         return Colors.black;
       }
     }),
     fillColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
-        return Colors.blue;
+        return FZColors.primary;
       } else {
         return Colors.transparent;
       }

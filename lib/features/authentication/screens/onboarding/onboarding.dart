@@ -10,6 +10,8 @@ import 'package:fz_store/utils/constants/text_strings.dart';
 import 'package:fz_store/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
 import 'package:fz_store/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
 import 'package:fz_store/features/authentication/screens/onboarding/widgets/onboarding_navigation.dart';
+import 'package:fz_store/utils/router/router.dart';
+import 'package:go_router/go_router.dart';
 
 class OnBoardScreen extends ConsumerWidget {
   const OnBoardScreen({super.key});
@@ -79,6 +81,9 @@ class OnBoardScreen extends ConsumerWidget {
             onPageIndex: currentPageIndex,
             onPress: () {
               log(currentPageIndex.toString());
+              if (currentPageIndex == 2) {
+                context.pushNamed(FZRouter.loginSreenRouteName);
+              }
               slideOnboardingPage(currentPageIndex + 1, pageController);
             },
           ),

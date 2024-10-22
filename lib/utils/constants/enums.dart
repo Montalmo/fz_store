@@ -4,6 +4,8 @@ enum TextSizes { small, medium, large }
 
 enum OrderStatus { processing, shipped, delivered }
 
+enum SocilalMedia { google, facebook, apple }
+
 enum PaymentMethods {
   paypal,
   googlePay,
