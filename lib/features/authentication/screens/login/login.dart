@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:fz_store/common/widgets/social_button.dart';
 import 'package:fz_store/features/authentication/screens/login/data/login_socilabuttons_list.dart';
 import 'package:fz_store/features/authentication/screens/login/widgets/login_form.dart';
 import 'package:fz_store/features/authentication/screens/login/widgets/login_header.dart';
@@ -34,12 +33,10 @@ class LoginScreen extends ConsumerWidget {
                 },
                 signInOnPressed: () {},
               ),
-              FZFormDivider(
-                dark: dark,
+              const FZFormDivider(
                 title: FZText.orSignInWith,
               ),
               FZSocialButtons(
-                dark: dark,
                 buttonsList: socialButtonsList,
               ),
             ],

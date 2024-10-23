@@ -109,8 +109,7 @@ class FZSignupForm extends StatelessWidget {
                         style: context.theme.textTheme.bodySmall),
                     TextSpan(
                         text: '${FZText.privacyPolicy} ',
-                        style:
-                            context.theme.textTheme.bodyMedium!.apply(
+                        style: context.theme.textTheme.bodyMedium!.apply(
                           color: FZColors.primary,
                           decoration: TextDecoration.underline,
                           decorationColor: FZColors.primary,
@@ -120,8 +119,7 @@ class FZSignupForm extends StatelessWidget {
                         style: context.theme.textTheme.bodySmall),
                     TextSpan(
                         text: ' ${FZText.termsOfUse} ',
-                        style:
-                            context.theme.textTheme.bodyMedium!.apply(
+                        style: context.theme.textTheme.bodyMedium!.apply(
                           color: FZColors.primary,
                           decoration: TextDecoration.underline,
                           decorationColor: FZColors.primary,
@@ -141,8 +139,8 @@ class FZSignupForm extends StatelessWidget {
               child: const Text(FZText.createAccount),
             ),
           ),
-          FZFormDivider(dark: dark, title: FZText.orSignUpWith),
-          FZSocialButtons(dark: dark, buttonsList: socialButtonsList),
+          const FZFormDivider(title: FZText.orSignUpWith),
+          FZSocialButtons( buttonsList: socialButtonsList),
         ],
       ),
     );
