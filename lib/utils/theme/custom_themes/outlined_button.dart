@@ -14,7 +14,7 @@ class FZOutlinedButton {
           fontSize: 16.0,
           color: FZColors.textPrimary,
           fontWeight: FontWeight.w500),
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadiusDirectional.circular(14.0)),
     ),
@@ -30,7 +30,7 @@ class FZOutlinedButton {
       ),
       textStyle: const TextStyle(
           fontSize: 16.0, color: FZColors.white, fontWeight: FontWeight.w500),
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadiusDirectional.circular(14.0)),
     ),

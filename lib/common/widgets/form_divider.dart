@@ -12,27 +12,30 @@ class FZFormDivider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Expanded(
-          child: Divider(
-            color: dark ? FZColors.darkGrey : FZColors.grey,
-            thickness: .5,
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: FZSizes.s24),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Expanded(
+            child: Divider(
+              color: dark ? FZColors.darkGrey : FZColors.grey,
+              thickness: .5,
+            ),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: FZSizes.s8),
-          child: Text(title.toUpperCase(),
-              style: context.theme.textTheme.labelSmall),
-        ),
-        Expanded(
-          child: Divider(
-            color: dark ? FZColors.darkGrey : FZColors.grey,
-            thickness: .5,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: FZSizes.s8),
+            child: Text(title.toUpperCase(),
+                style: context.theme.textTheme.labelSmall),
           ),
-        ),
-      ],
+          Expanded(
+            child: Divider(
+              color: dark ? FZColors.darkGrey : FZColors.grey,
+              thickness: .5,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

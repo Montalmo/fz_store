@@ -13,7 +13,7 @@ class FZElevatedButtonThene {
       disabledForegroundColor: FZColors.darkGrey,
       disabledBackgroundColor: FZColors.buttonDisabled,
       side: const BorderSide(color: FZColors.buttonPrimary),
-      padding: const EdgeInsets.symmetric(vertical: 18.0),
+      padding: const EdgeInsets.symmetric(vertical: 16.0),
       textStyle: const TextStyle(
           fontSize: 16.0, color: Colors.white, fontWeight: FontWeight.w500),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14.0)),
@@ -31,7 +31,7 @@ class FZElevatedButtonThene {
       side: const BorderSide(
         color: FZColors.buttonPrimary,
       ),
-      padding: const EdgeInsets.symmetric(vertical: 18.0),
+      padding: const EdgeInsets.symmetric(vertical: 16.0),
       textStyle: const TextStyle(
           fontSize: 16.0, color: Colors.white, fontWeight: FontWeight.w500),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14.0)),

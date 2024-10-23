@@ -6,7 +6,11 @@ import 'package:fz_store/utils/constants/text_strings.dart';
 class FZLoginForm extends StatelessWidget {
   const FZLoginForm({
     super.key,
+    required this.signInOnPressed,
+    required this.createAccountOnPressed,
   });
+
+  final VoidCallback signInOnPressed, createAccountOnPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +18,6 @@ class FZLoginForm extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(
           top: FZSizes.s24,
-          bottom: FZSizes.s24,
         ),
         child: Column(
           children: [
@@ -42,7 +45,13 @@ class FZLoginForm extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Checkbox(value: true, onChanged: (value) {}),
+                    SizedBox(
+                        width: 24,
+                        height: 24,
+                        child: Checkbox(value: true, onChanged: (value) {})),
+                    const SizedBox(
+                      width: FZSizes.s8,
+                    ),
                     const Text(FZText.rememberMe),
                   ],
                 ),
@@ -58,7 +67,7 @@ class FZLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: signInOnPressed,
                 child: const Text(FZText.signIn),
               ),
             ),
@@ -68,7 +77,7 @@ class FZLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: createAccountOnPressed,
                 child: const Text(FZText.createAccount),
               ),
             ),

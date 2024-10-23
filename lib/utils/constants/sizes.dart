@@ -33,7 +33,7 @@ class FZSizes {
   static const double imageThumbSize = 80.0;
 
   //* Default spacing between selections
-  static const double defaultSpace = 24.0;
+  static const double defaultSpace = 16.0;
   static const double defaultBwnItems = 16.0;
   static const double defaultBwnSections = 32.0;
 
