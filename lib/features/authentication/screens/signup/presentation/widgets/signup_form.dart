@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:fz_store/common/widgets/form_divider.dart';
-import 'package:fz_store/common/widgets/social_button.dart';
-import 'package:fz_store/common/widgets/social_buttons.dart';
 import 'package:fz_store/utils/constants/colors.dart';
 import 'package:fz_store/utils/constants/sizes.dart';
 import 'package:fz_store/utils/constants/text_strings.dart';
@@ -10,13 +7,10 @@ import 'package:fz_store/utils/extentions/extentions.dart';
 
 class FZSignupForm extends StatelessWidget {
   const FZSignupForm({
-    super.key,
-    required this.dark,
-    required this.socialButtonsList,
+    super.key, required this.createAccountOnPressed,
   });
 
-  final bool dark;
-  final List<FZSocialButton> socialButtonsList;
+  final VoidCallback createAccountOnPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -135,12 +129,10 @@ class FZSignupForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: createAccountOnPressed,
               child: const Text(FZText.createAccount),
             ),
           ),
-          const FZFormDivider(title: FZText.orSignUpWith),
-          FZSocialButtons( buttonsList: socialButtonsList),
         ],
       ),
     );

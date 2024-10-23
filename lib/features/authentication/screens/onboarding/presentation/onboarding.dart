@@ -3,13 +3,13 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fz_store/features/authentication/controllers/onboarding_controllers/onboarding_controller.dart';
-import 'package:fz_store/features/authentication/screens/onboarding/widgets/onboardingnext_button.dart';
+import 'package:fz_store/features/authentication/screens/onboarding/presentation/widgets/onboardingnext_button.dart';
 
 import 'package:fz_store/utils/constants/image_strings.dart';
 import 'package:fz_store/utils/constants/text_strings.dart';
-import 'package:fz_store/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
-import 'package:fz_store/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
-import 'package:fz_store/features/authentication/screens/onboarding/widgets/onboarding_navigation.dart';
+import 'package:fz_store/features/authentication/screens/onboarding/presentation/widgets/onboarding_skip.dart';
+import 'package:fz_store/features/authentication/screens/onboarding/presentation/widgets/onboarding_page.dart';
+import 'package:fz_store/features/authentication/screens/onboarding/presentation/widgets/onboarding_navigation.dart';
 import 'package:fz_store/utils/router/router.dart';
 import 'package:go_router/go_router.dart';
 
@@ -80,7 +80,6 @@ class OnBoardScreen extends ConsumerWidget {
           OnBoardingNextButton(
             onPageIndex: currentPageIndex,
             onPress: () {
-              log(currentPageIndex.toString());
               if (currentPageIndex == 2) {
                 context.pushNamed(FZRouter.loginSreenRouteName);
               }

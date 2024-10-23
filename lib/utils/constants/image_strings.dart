@@ -16,4 +16,7 @@ class FZImages {
       'assets/images/onboarding_images/payment.png';
   static const String onBpoardingImage3 =
       'assets/images/onboarding_images/delivery.png';
+
+  // *App Verify Email
+  static const String verifyEmailImage = 'assets/images/verify_email.png';
 }

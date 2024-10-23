@@ -1,8 +1,9 @@
+import 'package:fz_store/features/authentication/screens/signup/presentation/verify_email.dart';
 import 'package:go_router/go_router.dart';
 
-import 'package:fz_store/features/authentication/screens/login/login.dart';
-import 'package:fz_store/features/authentication/screens/onboarding/onboarding.dart';
-import 'package:fz_store/features/authentication/screens/signup/signup.dart';
+import 'package:fz_store/features/authentication/screens/login/presentation/login.dart';
+import 'package:fz_store/features/authentication/screens/onboarding/presentation/onboarding.dart';
+import 'package:fz_store/features/authentication/screens/signup/presentation/signup.dart';
 
 class FZRouter {
   FZRouter._();
@@ -10,6 +11,7 @@ class FZRouter {
   static const onboardingSreenRouteName = 'onboarding-screen';
   static const loginSreenRouteName = 'login-screen';
   static const signUpSreenRouteName = 'signup-screen';
+  static const verifyEmailSreenRouteName = 'sverify-email-screen';
 
   static final GoRouter router = GoRouter(
     routes: [
@@ -27,6 +29,13 @@ class FZRouter {
         name: signUpSreenRouteName,
         path: '/gignup',
         builder: (context, state) => const SignUpScreen(),
+        routes: [
+          GoRoute(
+            name: verifyEmailSreenRouteName,
+            path: 'verifi-email',
+            builder: (context, state) => const VrifyEmailScreen(),
+          ),
+        ],
       ),
     ],
   );
