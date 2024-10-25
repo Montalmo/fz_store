@@ -1,3 +1,4 @@
+import 'package:fz_store/features/shop/screens/home/presentation/home.dart';
 import 'package:fz_store/features/shop/screens/navigation/presentation/navigation_menu.dart';
 import 'package:fz_store/features/authentication/screens/password/presentation/reset_passwors.dart';
 import 'package:go_router/go_router.dart';
@@ -21,6 +22,7 @@ class FZRouter {
   static const resetPasswordSreenRouteName = 'reset-password-screen';
   static const forgotPasswordSreenRouteName = 'forgot-password-screen';
   static const navigationMenuSreenRouteName = 'navigation-menu-screen';
+  static const homeSreenRouteName = 'home-screen';
 
   static final GoRouter router = GoRouter(
     routes: [
@@ -45,9 +47,17 @@ class FZRouter {
                 builder: (context, state) => const VrifyEmailScreen(),
               ),
               GoRoute(
-                  name: navigationMenuSreenRouteName,
-                  path: 'navigation-menu-screen',
-                  builder: (context, state) => const NavigationMenu()),
+                name: navigationMenuSreenRouteName,
+                path: 'navigation-menu-screen',
+                builder: (context, state) => const NavigationMenu(),
+                routes: [
+                  GoRoute(
+                    name: homeSreenRouteName,
+                    path: 'home-screen',
+                    builder: (context, state) => const HomeScreen(),
+                  ),
+                ],
+              ),
             ],
           ),
           GoRoute(

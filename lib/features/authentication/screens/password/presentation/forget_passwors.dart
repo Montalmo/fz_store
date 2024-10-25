@@ -33,9 +33,9 @@ class ForgotPasswordScreen extends StatelessWidget {
               height: FZSizes.spaceBtwInputFields,
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: FZText.email,
-                prefixIcon: const Icon(Icons.arrow_circle_right_outlined),
+                prefixIcon: Icon(Icons.arrow_circle_right_outlined),
               ),
             ),
             const SizedBox(
