@@ -31,7 +31,9 @@ class LoginScreen extends ConsumerWidget {
                 createAccountOnPressed: () {
                   context.pushNamed(FZRouter.signUpSreenRouteName);
                 },
-                signInOnPressed: () {},
+                signInOnPressed: () {
+                  context.pushNamed(FZRouter.navigationMenuSreenRouteName);
+                },
               ),
               const FZFormDivider(
                 title: FZText.orSignInWith,

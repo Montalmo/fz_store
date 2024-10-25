@@ -1,3 +1,4 @@
+import 'package:fz_store/features/shop/screens/navigation/presentation/navigation_menu.dart';
 import 'package:fz_store/features/authentication/screens/password/presentation/reset_passwors.dart';
 import 'package:go_router/go_router.dart';
 
@@ -17,8 +18,9 @@ class FZRouter {
   static const successSreenRouteName = 'success-screen';
   static const onboardingSreenRouteName = 'onboarding-screen';
   static const verifyEmailSreenRouteName = 'sverify-email-screen';
-  static const forgotPasswordSreenRouteName = 'forgot-password-screen';
   static const resetPasswordSreenRouteName = 'reset-password-screen';
+  static const forgotPasswordSreenRouteName = 'forgot-password-screen';
+  static const navigationMenuSreenRouteName = 'navigation-menu-screen';
 
   static final GoRouter router = GoRouter(
     routes: [
@@ -42,6 +44,10 @@ class FZRouter {
                 path: 'verifi-email-screen',
                 builder: (context, state) => const VrifyEmailScreen(),
               ),
+              GoRoute(
+                  name: navigationMenuSreenRouteName,
+                  path: 'navigation-menu-screen',
+                  builder: (context, state) => const NavigationMenu()),
             ],
           ),
           GoRoute(

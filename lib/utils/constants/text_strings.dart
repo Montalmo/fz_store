@@ -43,6 +43,13 @@ class FZText {
   static const String resendEmail = 'Resend Email';
   static const String resendEmailIn = 'Resend email in';
 
+  //* Navigation Menu Text
+  static const String home = 'Home';
+  static const String store = 'Store';
+  static const String wishlist = 'Wishlist';
+  static const String profile = 'Profile';
+
+
   //*Auth Heading Text
   static const String loginTitle = 'Welcome back,';
   static const String loginSubTitle =
