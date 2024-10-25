@@ -36,6 +36,7 @@ class FZText {
   static const String orSignUpWith = 'or sign up with';
   static const String iAgreeTo = 'I agree to';
   static const String and = 'and';
+  static const String done = 'Done';
   static const String privacyPolicy = 'Privacy Policy';
   static const String termsOfUse = 'terms of use';
   static const String verificationCode = 'verificationCode';
@@ -51,6 +52,8 @@ class FZText {
   static const String forgetPasswordSubTitle =
       'Don`t worry sometimes people can forget too, enter your email and we will send you a password reset link.';
   static const String changeYourPasswordTitle =
+      'Your Account Security is Our Oriority!';
+  static const String changeYourPasswordSubTitle =
       'Your Account Security is Our Oriority! We`ve Sent You a Secure link to Safetly Change Your Password and Keep Your Account Protected.';
   static const String confirmEmailTitle = 'Verify you email adress!';
   static const String confirmEmailSubTitle =

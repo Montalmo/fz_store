@@ -19,4 +19,5 @@ class FZImages {
 
   // *App Verify Email
   static const String verifyEmailImage = 'assets/images/verify_email.png';
+  static const String accountCreatedImage = 'assets/images/account_created.png';
 }

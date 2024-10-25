@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:fz_store/utils/constants/sizes.dart';
 import 'package:fz_store/utils/constants/text_strings.dart';
+import 'package:fz_store/utils/router/router.dart';
+import 'package:go_router/go_router.dart';
 
 class FZLoginForm extends StatelessWidget {
   const FZLoginForm({
@@ -56,7 +58,9 @@ class FZLoginForm extends StatelessWidget {
                   ],
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    context.pushNamed(FZRouter.forgotPasswordSreenRouteName);
+                  },
                   child: const Text(FZText.forgetPassword),
                 ),
               ],

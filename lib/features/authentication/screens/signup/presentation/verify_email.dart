@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:fz_store/utils/constants/colors.dart';
-import 'package:fz_store/utils/constants/image_strings.dart';
 
+import 'package:fz_store/common/domain/success_screen_data.dart';
+import 'package:fz_store/utils/constants/image_strings.dart';
 import 'package:fz_store/utils/constants/sizes.dart';
 import 'package:fz_store/utils/constants/text_strings.dart';
 import 'package:fz_store/utils/extentions/extentions.dart';
@@ -64,7 +64,17 @@ class VrifyEmailScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    context.goNamed(
+                      FZRouter.successSreenRouteName,
+                      extra: SuccessScreenData(
+                        title: FZText.yourAccountCreatedTiltle,
+                        subTitle: FZText.yourAccountCreatedSubTiltle,
+                        imagePath: FZImages.accountCreatedImage,
+                        routePath: FZRouter.loginSreenRouteName,
+                      ),
+                    );
+                  },
                   child: const Text(FZText.fzContinue),
                 ),
               ),
