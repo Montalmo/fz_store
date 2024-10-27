@@ -73,4 +73,5 @@ class FZText {
 
   //* Shop Texts
   static const String searchInStore = 'Search in Store';
+  static const String popularCategories = 'Popular Cartegories';
 }

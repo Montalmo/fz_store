@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fz_store/utils/constants/colors.dart';
 
 import 'package:fz_store/utils/device/device_utility.dart';
 import 'package:go_router/go_router.dart';

@@ -20,4 +20,8 @@ class FZImages {
   // *App Verify Email
   static const String verifyEmailImage = 'assets/images/verify_email.png';
   static const String accountCreatedImage = 'assets/images/account_created.png';
+
+  //* Shop Category  Icons
+  static const String sportCategoryImage =
+      'assets/icons/sport_category_icon.svg';
 }
