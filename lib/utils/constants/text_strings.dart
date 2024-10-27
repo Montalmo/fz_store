@@ -49,7 +49,6 @@ class FZText {
   static const String wishlist = 'Wishlist';
   static const String profile = 'Profile';
 
-
   //*Auth Heading Text
   static const String loginTitle = 'Welcome back,';
   static const String loginSubTitle =
@@ -71,4 +70,7 @@ class FZText {
       'Youe account successfuly created!';
   static const String yourAccountCreatedSubTiltle =
       'Welcome to Your Ultimate Shopping Destination: Youer Accont is Created, Unleash the Joy of Seamless Online Shopping!';
+
+  //* Shop Texts
+  static const String searchInStore = 'Search in Store';
 }
