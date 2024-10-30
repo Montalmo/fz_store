@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:fz_store/features/shop/controllers/promo_banners_data_controller.dart';
+import 'package:fz_store/common/widgets/grid_layout.dart';
+import 'package:fz_store/common/widgets/product_card_vertical.dart';
+import 'package:fz_store/features/shop/controllers/home_controllers/promo_banners_data_controller.dart';
 import 'package:fz_store/features/shop/screens/home/presentation/widgets/promo_slider.dart';
 
 import 'package:fz_store/utils/constants/sizes.dart';
@@ -59,6 +61,13 @@ class HomeScreen extends ConsumerWidget {
             ),
             FZPromoSlider(
               banners: promoBunnersList,
+            ),
+            const SizedBox(
+              height: FZSizes.s16,
+            ),
+            FZGridLayout(
+              itemCount: 6,
+              itemBuider: (_, index) => FZproductCardVertical(),
             ),
           ],
         ),
