@@ -15,8 +15,9 @@ class FZPrimaryHeaderContainer extends StatelessWidget {
     return Container(
       color: FZColors.primary,
       child: SizedBox(
-        height: 400,
+        height: 310,
         child: Stack(
+          
           children: [
             Positioned(
               top: -150,

@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fz_store/utils/constants/colors.dart';
 import 'package:fz_store/utils/constants/text_strings.dart';
 import 'package:fz_store/utils/helpers/helper_function.dart';
-import 'package:fz_store/features/shop/controllers/navogation_menu_controller.dart';
+import 'package:fz_store/features/shop/controllers/navigation_menu_controller.dart';
 
 class NavigationMenu extends ConsumerWidget {
   const NavigationMenu({super.key});

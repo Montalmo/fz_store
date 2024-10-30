@@ -24,4 +24,7 @@ class FZImages {
   //* Shop Category  Icons
   static const String sportCategoryImage =
       'assets/icons/sport_category_icon.svg';
+
+  //* Bunners
+  static const String bunnerImage01 = 'assets/images/bunners/bunner_01.png';
 }
