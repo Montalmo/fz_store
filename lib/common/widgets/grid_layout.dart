@@ -6,16 +6,16 @@ class FZGridLayout extends StatelessWidget {
     super.key,
     required this.itemCount,
     required this.itemBuider,
+    required this.mainAxisExtent,
   });
 
   final int itemCount;
+  final double mainAxisExtent;
 
   final Widget? Function(BuildContext, int) itemBuider;
 
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
-
     return GridView.builder(
       itemCount: itemCount,
       shrinkWrap: true,
@@ -25,7 +25,7 @@ class FZGridLayout extends StatelessWidget {
         crossAxisCount: 2,
         mainAxisSpacing: FZSizes.s12,
         crossAxisSpacing: FZSizes.s12,
-        childAspectRatio: ((width - 44) / 2) / (width - 64),
+        mainAxisExtent: mainAxisExtent,
       ),
       itemBuilder: itemBuider,
     );

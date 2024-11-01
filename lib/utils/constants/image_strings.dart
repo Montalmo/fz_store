@@ -11,11 +11,11 @@ class FZImages {
 
   // *App Onborading images
   static const String onBpoardingImage1 =
-      'assets/images/onboarding_images/choose.png';
+      'assets/images/onboarding/choose.png';
   static const String onBpoardingImage2 =
-      'assets/images/onboarding_images/payment.png';
+      'assets/images/onboarding/payment.png';
   static const String onBpoardingImage3 =
-      'assets/images/onboarding_images/delivery.png';
+      'assets/images/onboarding/delivery.png';
 
   // *App Verify Email
   static const String verifyEmailImage = 'assets/images/verify_email.png';
@@ -27,4 +27,9 @@ class FZImages {
 
   //* Bunners
   static const String bunnerImage01 = 'assets/images/bunners/bunner_01.png';
+
+  //* Brands
+  static const String addidasLogoDark = 'assets/images/brands/adidas_logo_on_dark.png';
+  static const String addidasLogoLight = 'assets/images/brands/adidas_logo_on_light.png';
 }
+

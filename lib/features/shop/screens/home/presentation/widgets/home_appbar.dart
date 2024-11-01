@@ -39,6 +39,7 @@ class FZHomeAppBar extends StatelessWidget {
             counter: '9',
             onPressed: () {},
             color: FZColors.light,
+            backgroundColor: FZColors.dark.withOpacity(.7),
           ),
         ),
       ],

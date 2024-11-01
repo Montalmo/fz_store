@@ -23,9 +23,9 @@ class FZTextTheme {
 
     //* Body
     bodyLarge: const TextStyle().copyWith(
-        fontSize: 14.0, fontWeight: FontWeight.w400, color: Colors.black),
+        fontSize: 18.0, fontWeight: FontWeight.w400, color: Colors.black),
     bodyMedium: const TextStyle().copyWith(
-        fontSize: 14.0, fontWeight: FontWeight.w400, color: Colors.black),
+        fontSize: 16.0, fontWeight: FontWeight.w400, color: Colors.black),
     bodySmall: const TextStyle().copyWith(
         fontSize: 14.0,
         fontWeight: FontWeight.w400,
@@ -60,9 +60,9 @@ class FZTextTheme {
 
     //* Body
     bodyLarge: const TextStyle().copyWith(
-        fontSize: 14.0, fontWeight: FontWeight.w400, color: Colors.white),
+        fontSize: 18.0, fontWeight: FontWeight.w400, color: Colors.white),
     bodyMedium: const TextStyle().copyWith(
-        fontSize: 14.0, fontWeight: FontWeight.w400, color: Colors.white),
+        fontSize: 16.0, fontWeight: FontWeight.w400, color: Colors.white),
     bodySmall: const TextStyle().copyWith(
         fontSize: 14.0,
         fontWeight: FontWeight.w400,

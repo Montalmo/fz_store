@@ -10,6 +10,6 @@ final List<FZPromoBanner> promoBannersList = [
       imagePath: 'assets/images/bunners/bunner_02.png', onPressed: () {}),
 ];
 
-final promoBannrsDataControllerProvider = Provider<List<FZPromoBanner>>((ref) {
+final promoBannersDataControllerProvider = Provider<List<FZPromoBanner>>((ref) {
   return promoBannersList;
 });
