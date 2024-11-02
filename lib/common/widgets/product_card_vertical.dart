@@ -1,5 +1,6 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
+import 'package:fz_store/utils/constants/image_strings.dart';
 
 import 'package:fz_store/utils/constants/sizes.dart';
 import 'package:fz_store/utils/constants/colors.dart';
@@ -40,7 +41,7 @@ class FZproductCardVertical extends StatelessWidget {
               child: Stack(
                 children: [
                   const FZRoundedImage(
-                    imagePath: 'assets/images/products/nike_01.png',
+                    imagePath: FZImages.productNike02,
                   ),
                   Positioned(
                     top: 12,

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fz_store/utils/constants/colors.dart';
 import 'package:fz_store/utils/constants/sizes.dart';
 import 'package:fz_store/utils/extentions/extentions.dart';
+
 class FSSectionHeading extends StatelessWidget {
   const FSSectionHeading({
     super.key,
@@ -42,9 +43,9 @@ class FSSectionHeading extends StatelessWidget {
               child: Text(
                 buttonTitle!,
                 style: isHome
-                    ? context.theme.textTheme.headlineSmall!
-                        .apply(color: textColor)
-                    : context.theme.textTheme.bodyMedium,
+                    ? context.theme.textTheme.headlineSmall
+                    : context.theme.textTheme.bodyMedium!
+                        .apply(color: FZColors.primary),
               ),
             ),
         ],

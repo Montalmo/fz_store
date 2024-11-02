@@ -5,30 +5,37 @@ import 'package:fz_store/utils/constants/colors.dart';
 import 'package:fz_store/utils/extentions/extentions.dart';
 import 'package:fz_store/utils/helpers/helper_function.dart';
 
-class FZBrandWithProducts extends StatelessWidget {
-  const FZBrandWithProducts({
+class FZBrandCard extends StatelessWidget {
+  const FZBrandCard({
     super.key,
     required this.onPressed,
     required this.imagePath,
     required this.brandName,
     required this.producrPcs,
+    required this.isBordered,
   });
 
   final VoidCallback onPressed;
   final String imagePath, brandName;
   final int producrPcs;
+  final bool isBordered;
 
   @override
   Widget build(BuildContext context) {
     final dark = FZHelperFuctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: onPressed,
       child: Container(
         width: 200,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(FZSizes.s16),
-          border: Border.all(color: FZColors.grey),
+          border: Border.all(
+              color: !isBordered
+                  ? Colors.transparent
+                  : dark
+                      ? FZColors.darkerGrey
+                      : FZColors.grey),
         ),
         child: Row(
           children: [
