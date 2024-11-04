@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import 'package:fz_store/common/widgets/grid_layout.dart';
 import 'package:fz_store/common/widgets/product_card_vertical.dart';
 import 'package:fz_store/features/shop/controllers/home_controllers/promo_banners_data_controller.dart';
 import 'package:fz_store/features/shop/screens/home/presentation/widgets/promo_slider.dart';
-
 import 'package:fz_store/utils/constants/sizes.dart';
 import 'package:fz_store/utils/constants/text_strings.dart';
 import 'package:fz_store/common/widgets/section_heading.dart';
@@ -55,6 +55,9 @@ class HomeScreen extends ConsumerWidget {
                         ),
                         FZHomeCategories(),
                       ],
+                    ),
+                    SizedBox(
+                      height: FZSizes.s40,
                     ),
                   ],
                 ),

@@ -38,4 +38,7 @@ class FZImages {
   static const String productNike02 = 'assets/images/products/nike_02.png';
   static const String productNike03 = 'assets/images/products/nike_03.png';
   static const String productNike04 = 'assets/images/products/nike_04.png';
+
+  //* Users
+  static const String defaultAvatar = 'assets/images/avatars/default_ava.png';
 }
