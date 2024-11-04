@@ -1,16 +1,17 @@
-import 'package:fz_store/features/shop/screens/home/presentation/home.dart';
-import 'package:fz_store/features/shop/screens/navigation/presentation/navigation_menu.dart';
-import 'package:fz_store/features/authentication/screens/password/presentation/reset_passwors.dart';
-import 'package:fz_store/features/shop/screens/store/presentation/store.dart';
 import 'package:go_router/go_router.dart';
 
 import 'package:fz_store/common/widgets/success_screen.dart';
 import 'package:fz_store/common/domain/success_screen_data.dart';
-import 'package:fz_store/features/authentication/screens/password/presentation/forget_passwors.dart';
+import 'package:fz_store/features/shop/screens/home/presentation/home.dart';
+import 'package:fz_store/features/shop/screens/store/presentation/store.dart';
+import 'package:fz_store/features/shop/screens/wishlist/presentation/wishlist.dart';
 import 'package:fz_store/features/authentication/screens/login/presentation/login.dart';
 import 'package:fz_store/features/authentication/screens/signup/presentation/signup.dart';
+import 'package:fz_store/features/shop/screens/navigation/presentation/navigation_menu.dart';
 import 'package:fz_store/features/authentication/screens/signup/presentation/verify_email.dart';
 import 'package:fz_store/features/authentication/screens/onboarding/presentation/onboarding.dart';
+import 'package:fz_store/features/authentication/screens/password/presentation/reset_passwors.dart';
+import 'package:fz_store/features/authentication/screens/password/presentation/forget_passwors.dart';
 
 class FZRouter {
   FZRouter._();
@@ -25,6 +26,7 @@ class FZRouter {
   static const navigationMenuSreenRouteName = 'navigation-menu-screen';
   static const homeSreenRouteName = 'home-screen';
   static const storeSreenRouteName = 'store-screen';
+  static const favoriteSreenRouteName = 'favorite-screen';
 
   static final GoRouter router = GoRouter(
     routes: [
@@ -62,6 +64,11 @@ class FZRouter {
                     name: storeSreenRouteName,
                     path: 'store-screen',
                     builder: (context, state) => const StoreScreen(),
+                  ),
+                  GoRoute(
+                    name: favoriteSreenRouteName,
+                    path: 'favorite-screen',
+                    builder: (context, state) => const FavoriteScreen(),
                   ),
                 ],
               ),

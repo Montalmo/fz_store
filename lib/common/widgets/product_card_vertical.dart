@@ -114,6 +114,7 @@ class FZproductCardVertical extends StatelessWidget {
                 ],
               ),
             ),
+            Spacer(),
             Padding(
               padding: const EdgeInsets.only(left: FZSizes.s12),
               child: Row(
