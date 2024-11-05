@@ -72,7 +72,7 @@ class StoreScreen extends ConsumerWidget {
                     const SizedBox(
                       height: FZSizes.s16,
                     ),
-                    const FSSectionHeading(
+                    const FZSectionHeading(
                       showActionButton: true,
                       isHome: false,
                       title: 'Feature brands',

@@ -74,4 +74,22 @@ class FZText {
   //* Shop Texts
   static const String searchInStore = 'Search in Store';
   static const String popularCategories = 'Popular Cartegories';
+
+  //* Settings Menu
+  static const String addressTitle = 'My Address';
+  static const String addressSubTitle = 'Set shopping delivery address';
+  static const String cartTitle = 'My Cart';
+  static const String cartSubTitle = 'Add. remove products and move to checkout';
+  static const String ordersTitle = 'My Orders';
+  static const String ordersSubTitle = 'In-progrees and Completes Orders';
+  static const String bankTitle = 'Bank Account';
+  static const String banksSubTitle = 'Withdraw balance to registred bank account';
+  static const String couponsTitle = 'My Coupons';
+  static const String couponsSubTitle = 'List of all the discounted coupons';
+  static const String notificationsTitle = 'Notifications';
+  static const String notificationsSubTitle = 'Set any kind of notifivation message';
+  static const String privacyTitle = 'Accountt Privacy';
+  static const String privacySubTitle = 'Manage dat usage and connected accounts';
+
+
 }

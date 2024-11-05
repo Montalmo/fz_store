@@ -3,8 +3,8 @@ import 'package:fz_store/utils/constants/colors.dart';
 import 'package:fz_store/utils/constants/sizes.dart';
 import 'package:fz_store/utils/extentions/extentions.dart';
 
-class FSSectionHeading extends StatelessWidget {
-  const FSSectionHeading({
+class FZSectionHeading extends StatelessWidget {
+  const FZSectionHeading({
     super.key,
     this.textColor = FZColors.light,
     required this.showActionButton,

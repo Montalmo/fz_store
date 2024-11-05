@@ -45,7 +45,7 @@ class HomeScreen extends ConsumerWidget {
                     ),
                     Column(
                       children: [
-                        FSSectionHeading(
+                        FZSectionHeading(
                           title: FZText.popularCategories,
                           showActionButton: false,
                           isHome: true,

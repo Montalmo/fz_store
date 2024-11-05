@@ -38,7 +38,7 @@ class FZCategoryTab extends StatelessWidget {
               ),
 
               /// Products
-              const FSSectionHeading(
+              const FZSectionHeading(
                 showActionButton: true,
                 isHome: false,
                 title: 'You might like',
