@@ -1,3 +1,4 @@
+import 'package:fz_store/features/personalization/screens/profile/presentation/profile.dart';
 import 'package:go_router/go_router.dart';
 
 import 'package:fz_store/common/widgets/success_screen.dart';
@@ -29,6 +30,7 @@ class FZRouter {
   static const resetPasswordSreenRouteName = 'reset-password-screen';
   static const forgotPasswordSreenRouteName = 'forgot-password-screen';
   static const navigationMenuSreenRouteName = 'navigation-menu-screen';
+  static const profileSreenRouteName = 'profile-screen';
 
   static final GoRouter router = GoRouter(
     routes: [
@@ -76,6 +78,13 @@ class FZRouter {
                     name: settingsSreenRouteName,
                     path: 'settings-screen',
                     builder: (context, state) => const SettingsScreen(),
+                    routes: [
+                      GoRoute(
+                        name: profileSreenRouteName,
+                        path: 'profile-screen',
+                        builder: (context, state) => const ProfileScreen(),
+                      ),
+                    ],
                   ),
                 ],
               ),

@@ -3,12 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fz_store/features/personalization/screens/settings/domain/setting_menu_tile_model.dart';
 import 'package:fz_store/utils/constants/text_strings.dart';
 
-List<SettingMenuTile> settingsMenuTileList = [
-  SettingMenuTile(
-      icon: Icons.pin_drop_outlined,
-      title: FZText.addressTitle,
-      subTitle: FZText.addressSubTitle,
-      onPressed: () {}),
+List<SettingMenuTile> accountSettingsMenuTileList = [
   SettingMenuTile(
       icon: Icons.pin_drop_outlined,
       title: FZText.addressTitle,
@@ -46,6 +41,23 @@ List<SettingMenuTile> settingsMenuTileList = [
       onPressed: () {}),
 ];
 
-final settingsMenuTileListProvider = Provider<List<SettingMenuTile>>((ref) {
-  return settingsMenuTileList;
+List<SettingMenuTile> appSettingsMenuTileList = [
+  SettingMenuTile(
+      icon: Icons.local_cafe_outlined,
+      title: FZText.safeModeTitle,
+      subTitle: FZText.safeModeSubTitle,
+      onPressed: () {}),
+  SettingMenuTile(
+      icon: Icons.image_aspect_ratio,
+      title: FZText.imageHDTitle,
+      subTitle: FZText.imageHDSubTitle,
+      onPressed: () {}),
+];
+
+final accountSettingsMenuTileListProvider =
+    Provider<List<SettingMenuTile>>((ref) {
+  return accountSettingsMenuTileList;
+});
+final appSettingsMenuTileListProvider = Provider<List<SettingMenuTile>>((ref) {
+  return appSettingsMenuTileList;
 });
