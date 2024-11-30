@@ -47,9 +47,9 @@ class SettingsScreen extends ConsumerWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: FZSizes.s16),
-              child: const FZSectionHeading(
+            const Padding(
+              padding:  EdgeInsets.symmetric(horizontal: FZSizes.s16),
+              child:  FZSectionHeading(
                   showActionButton: false,
                   title: 'Account Settings',
                   isHome: false),
@@ -68,9 +68,9 @@ class SettingsScreen extends ConsumerWidget {
                     .toList(),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: FZSizes.s16),
-              child: const FZSectionHeading(
+            const Padding(
+              padding:  EdgeInsets.symmetric(horizontal: FZSizes.s16),
+              child:  FZSectionHeading(
                   showActionButton: false,
                   title: 'App Settings',
                   isHome: false),

@@ -52,9 +52,9 @@ class ProfileScreen extends ConsumerWidget {
                       right: FZSizes.s16,
                       bottom: FZSizes.s16),
                   child: Divider()),
-              Padding(
-                 padding: const EdgeInsets.symmetric(horizontal: FZSizes.s16),
-                child: const FZSectionHeading(
+              const Padding(
+                 padding:  EdgeInsets.symmetric(horizontal: FZSizes.s16),
+                child:  FZSectionHeading(
                     showActionButton: false,
                     title: 'Profile Information',
                     isHome: false),

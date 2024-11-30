@@ -41,7 +41,7 @@ class FZProductMeta extends StatelessWidget {
                   .apply(decoration: TextDecoration.lineThrough),
             ),
             const SizedBox(width: FZSizes.s12),
-            FZPriceTextWidget(
+           const FZPriceTextWidget(
               price: '175',
             ),
           ],

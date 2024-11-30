@@ -40,9 +40,9 @@ class FZCategoryTab extends StatelessWidget {
               ),
 
               /// Products
-              Padding(
+              const Padding(
                 padding: EdgeInsets.symmetric(horizontal: FZSizes.s16),
-                child: const FZSectionHeading(
+                child:  FZSectionHeading(
                   showActionButton: true,
                   isHome: false,
                   title: 'You might like',

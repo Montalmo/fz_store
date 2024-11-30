@@ -47,8 +47,8 @@ class HomeScreen extends ConsumerWidget {
                     Column(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: FZSizes.s16),
+                          padding:
+                              EdgeInsets.symmetric(horizontal: FZSizes.s16),
                           child: FZSectionHeading(
                             title: FZText.popularCategories,
                             showActionButton: false,

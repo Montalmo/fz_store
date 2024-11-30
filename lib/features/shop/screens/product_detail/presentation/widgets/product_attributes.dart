@@ -17,7 +17,7 @@ class FZProductAttributes extends StatelessWidget {
     return Column(
       children: [
         Container(
-          margin: EdgeInsets.symmetric(vertical: FZSizes.s12),
+          margin: const EdgeInsets.symmetric(vertical: FZSizes.s12),
           padding: const EdgeInsets.symmetric(
               vertical: FZSizes.s8, horizontal: FZSizes.s16),
           decoration: BoxDecoration(
@@ -28,7 +28,7 @@ class FZProductAttributes extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  FZSectionHeading(
+                  const FZSectionHeading(
                       showActionButton: false,
                       title: 'Variations',
                       isHome: false),

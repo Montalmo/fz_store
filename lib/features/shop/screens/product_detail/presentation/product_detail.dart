@@ -54,8 +54,8 @@ class ProductDetail extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: FZSizes.s16),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: FZSizes.s16),
               child: Column(
                 children: [
                   FZRaitingShare(),
