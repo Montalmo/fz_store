@@ -38,7 +38,7 @@ class FZRaitingShare extends StatelessWidget {
         ),
         IconButton(
           onPressed: () {},
-          icon: Icon(
+          icon: const Icon(
             Icons.share_outlined,
             size: FZSizes.s24,
           ),

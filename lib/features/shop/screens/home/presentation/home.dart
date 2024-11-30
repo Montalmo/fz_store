@@ -20,6 +20,7 @@ class HomeScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final promoBunnersList = ref.watch(promoBannersDataControllerProvider);
+    final width = MediaQuery.of(context).size.width;
 
     return Scaffold(
       body: SingleChildScrollView(
@@ -45,10 +46,14 @@ class HomeScreen extends ConsumerWidget {
                     ),
                     Column(
                       children: [
-                        FZSectionHeading(
-                          title: FZText.popularCategories,
-                          showActionButton: false,
-                          isHome: true,
+                        Padding(
+                          padding:
+                              EdgeInsets.symmetric(horizontal: FZSizes.s16),
+                          child: FZSectionHeading(
+                            title: FZText.popularCategories,
+                            showActionButton: false,
+                            isHome: true,
+                          ),
                         ),
                         SizedBox(
                           height: FZSizes.s8,
@@ -71,7 +76,7 @@ class HomeScreen extends ConsumerWidget {
             ),
             FZGridLayout(
               itemCount: 6,
-              mainAxisExtent: 323,
+              mainAxisExtent: width - 64,
               itemBuider: (_, index) => const FZproductCardVertical(),
             ),
           ],

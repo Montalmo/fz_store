@@ -72,11 +72,15 @@ class StoreScreen extends ConsumerWidget {
                     const SizedBox(
                       height: FZSizes.s16,
                     ),
-                    const FZSectionHeading(
-                      showActionButton: true,
-                      isHome: false,
-                      title: 'Feature brands',
-                      buttonTitle: 'View all',
+                    const Padding(
+                      padding:
+                           EdgeInsets.symmetric(horizontal: FZSizes.s16),
+                      child:  FZSectionHeading(
+                        showActionButton: true,
+                        isHome: false,
+                        title: 'Feature brands',
+                        buttonTitle: 'View all',
+                      ),
                     ),
                     FZGridLayout(
                       itemCount: 4,
