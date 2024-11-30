@@ -23,6 +23,7 @@ class StoreScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final dark = FZHelperFuctions.isDarkMode(context);
     final tabBarTabsList = ref.watch(tabBarTabsListProvider);
+    final width = MediaQuery.of(context).size.width;
 
     return DefaultTabController(
       length: 5,
@@ -72,11 +73,15 @@ class StoreScreen extends ConsumerWidget {
                     const SizedBox(
                       height: FZSizes.s16,
                     ),
-                    const FZSectionHeading(
-                      showActionButton: true,
-                      isHome: false,
-                      title: 'Feature brands',
-                      buttonTitle: 'View all',
+                    Padding(
+                      padding:
+                          const EdgeInsets.symmetric(horizontal: FZSizes.s16),
+                      child: const FZSectionHeading(
+                        showActionButton: true,
+                        isHome: false,
+                        title: 'Feature brands',
+                        buttonTitle: 'View all',
+                      ),
                     ),
                     FZGridLayout(
                       itemCount: 4,

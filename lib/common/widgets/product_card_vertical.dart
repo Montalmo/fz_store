@@ -8,6 +8,8 @@ import 'package:fz_store/common/widgets/price_text.dart';
 import 'package:fz_store/utils/extentions/extentions.dart';
 import 'package:fz_store/common/widgets/rounded_image.dart';
 import 'package:fz_store/utils/helpers/helper_function.dart';
+import 'package:fz_store/utils/router/router.dart';
+import 'package:go_router/go_router.dart';
 
 class FZproductCardVertical extends StatelessWidget {
   const FZproductCardVertical({super.key});
@@ -20,6 +22,7 @@ class FZproductCardVertical extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         log('card is tepped');
+        context.pushNamed(FZRouter.productDetailSreenRouteName);
       },
       child: Container(
         width: (width - 44) / 2,

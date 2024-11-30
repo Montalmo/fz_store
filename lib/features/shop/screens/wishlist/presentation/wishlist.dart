@@ -10,6 +10,8 @@ class FavoriteScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: FZAppBar(
         title: Text(
@@ -27,7 +29,7 @@ class FavoriteScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: FZGridLayout(
           itemCount: 4,
-          mainAxisExtent: 323,
+          mainAxisExtent: width - 64,
           itemBuider: (_, index) => const FZproductCardVertical(),
         ),
       ),

@@ -15,6 +15,8 @@ class FZCategoryTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+
     return ListView(
         shrinkWrap: true,
         physics: const NeverScrollableScrollPhysics(),
@@ -38,15 +40,18 @@ class FZCategoryTab extends StatelessWidget {
               ),
 
               /// Products
-              const FZSectionHeading(
-                showActionButton: true,
-                isHome: false,
-                title: 'You might like',
-                buttonTitle: 'View all',
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: FZSizes.s16),
+                child: const FZSectionHeading(
+                  showActionButton: true,
+                  isHome: false,
+                  title: 'You might like',
+                  buttonTitle: 'View all',
+                ),
               ),
               FZGridLayout(
                 itemCount: 6,
-                mainAxisExtent: 323,
+                mainAxisExtent: width - 64,
                 itemBuider: (_, index) => const FZproductCardVertical(),
               ),
             ],
