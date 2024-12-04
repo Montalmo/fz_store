@@ -86,11 +86,15 @@ class FZProductAttributes extends StatelessWidget {
           ),
         ),
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const FZSectionHeading(
               showActionButton: false,
               title: 'Colors',
               isHome: false,
+            ),
+            const SizedBox(
+              height: FZSizes.s8,
             ),
             Wrap(
               children: [
@@ -113,14 +117,22 @@ class FZProductAttributes extends StatelessWidget {
             ),
           ],
         ),
+        const SizedBox(
+          height: FZSizes.s16,
+        ),
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const FZSectionHeading(
               showActionButton: false,
               title: 'Size',
               isHome: false,
             ),
+            const SizedBox(
+              height: FZSizes.s8,
+            ),
             Wrap(
+              spacing: FZSizes.s8,
               children: [
                 FZChioceChip(
                   text: 'EU 24',
@@ -129,6 +141,16 @@ class FZProductAttributes extends StatelessWidget {
                 ),
                 FZChioceChip(
                   text: 'EU 36',
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+                FZChioceChip(
+                  text: 'Eu 38',
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+                FZChioceChip(
+                  text: 'Eu 38',
                   selected: false,
                   onSelected: (value) {},
                 ),
